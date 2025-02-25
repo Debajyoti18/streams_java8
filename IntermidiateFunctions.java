@@ -14,7 +14,7 @@ class IntermidiateFunctions{
      //     Elements that return true are included in the resulting stream; those that return false are excluded.
      /*@FunctionalInterface
      public interface Predicate<T> {
-       boolean test(T t);
+       boolean test(T t); //predicate is the Functional interface in java that have only one method template
  */
 Stream<String> strings = Stream.of("hello","I am Debajyoti"," an aspiring java developer");
 Stream<String> filtStream = strings.filter((String str)-> str.length()>6);
