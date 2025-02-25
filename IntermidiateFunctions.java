@@ -24,11 +24,11 @@ System.out.println(list1);
 
 
 
-// The map(Function<T,R> mapper) method in Java streams is used to transform each element in the stream 
+// The map(Function<T,R> mapper) method in Java streams is used to transform each element in the stream (T pe apply hoga R dega)
 //from one type to another. It applies a given function to each element and returns a new stream of the transformed elements.
   // map() takes a Function functional interface as its parameter. A Function is an 
   //interface that accepts an input of type T and produces an output of type R.
-  // Stream<R> map(Function<? super T, ? extends R> mapper)
+  // Stream<R> map(Function<? super T, ? extends R> mapper)--(T pe apply hoga R dega)
   Stream<String> string1 = Stream.of("Hello","I am Debajyoti"," An aspiring java developer");
   Stream<String> mapStreams= string1.map((String str)-> str.toLowerCase());
   //output : "hello","i am debajyoti"," an aspiring java developer"
